@@ -57,13 +57,6 @@
           <textarea id="inputDataHtml"></textarea>
           <label>Css</label>
           <textarea id="inputDataCss"></textarea>
-
-          <!-- <img src="./images/beer.svg" alt=""> -->
-          <!-- <h1 class="hed">MyDocument</h1> -->
-
-          <!-- .hed{
-            color:red
-          } -->
         </div>
         <div class="right-part">
           <label>Output</label>
@@ -74,18 +67,12 @@
 
 
     <script>
-      // <button id="openButton" onclick="onClick(this)">open</button>
-      // function onClick(x) {
-      //   x.style.border = "none"
-      // }
-
       function run() {
         const inputHtml = document.getElementById("inputDataHtml").value;
         const inputCss = document.getElementById("inputDataCss").value;
         const outPut = document.getElementById("outputDisplay")
 
         outPut.contentDocument.body.innerHTML = inputHtml + "<style>" + inputCss + "</style>";
-
       }
     </script>
   </body>
